@@ -131,7 +131,7 @@ const Watch = (props) => {
             }}
           >
             <Text style={styles.label}>
-              {player?.episode_number
+              {player?.episode_number != null
                 ? `Episode ${player?.episode_number}`
                 : "Now Loading..."}
             </Text>
