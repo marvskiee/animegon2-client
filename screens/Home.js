@@ -233,7 +233,7 @@ const Home = (props) => {
             style={[
               styles.simple_text,
               {
-                fontSize: width * 0.04,
+                fontSize: 15,
                 paddingTop: 60,
               },
             ]}
@@ -261,7 +261,7 @@ const Home = (props) => {
                   <Text
                     style={[
                       styles.episode_text,
-                      { fontSize: width * 0.04, marginTop: 10 },
+                      { fontSize: 15, marginTop: 10 },
                     ]}
                   >
                     Reload
@@ -413,7 +413,7 @@ const styles = StyleSheet.create({
   logo_text: {
     textAlign: "center",
     fontFamily: "montserrat_extrabold",
-    fontSize: 0.06 * width,
+    fontSize: 25,
     color: colors.white,
   },
 });

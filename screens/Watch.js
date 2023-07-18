@@ -166,10 +166,13 @@ const Watch = (props) => {
           </View>
         </View>
         <Text style={[styles.label, { paddingHorizontal: 10 }]}>Quality</Text>
+
         <View
           style={{
+            width,
             padding: 10,
             flexDirection: "row",
+            flexWrap: "wrap",
             gap: 10,
           }}
         >
@@ -190,9 +193,7 @@ const Watch = (props) => {
                   style={[
                     styles.quality_text,
                     {
-                      fontSize:
-                        ((width - 35) / watchData?.sources?.length) * 0.18,
-                      maxWidth: (width - 35) / watchData?.sources?.length,
+                      fontSize: 15,
                     },
                     ...[
                       item?.quality == player?.quality && {
@@ -300,7 +301,7 @@ const Watch = (props) => {
                       <Text
                         style={[
                           styles.episode_text,
-                          { fontSize: width * 0.04, marginTop: 10 },
+                          { fontSize: 15, marginTop: 10 },
                         ]}
                       >
                         Go Back
@@ -319,7 +320,7 @@ const Watch = (props) => {
                       <Text
                         style={[
                           styles.episode_text,
-                          { fontSize: width * 0.04, marginTop: 10 },
+                          { fontSize: 15, marginTop: 10 },
                         ]}
                       >
                         Reload
@@ -358,7 +359,7 @@ const styles = StyleSheet.create({
     fontFamily: "smooch_extrabold",
     color: colors.white,
     borderRadius: 30,
-    fontSize: width * 0.07,
+    fontSize: 30,
     padding: 10,
   },
   episode_title: {
@@ -373,7 +374,7 @@ const styles = StyleSheet.create({
     color: colors.white,
     textAlign: "center",
     padding: 10,
-    fontSize: width * 0.04,
+    fontSize: 15,
     textTransform: "capitalize",
     borderRadius: 10,
     backgroundColor: colors.lightgray,

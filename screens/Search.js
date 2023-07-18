@@ -81,7 +81,7 @@ const Search = (props) => {
           style={[
             styles.simple_text,
             {
-              fontSize: width * 0.04,
+              fontSize: 15,
               paddingTop: 60,
             },
           ]}
@@ -108,7 +108,7 @@ const Search = (props) => {
                   <Text
                     style={[
                       styles.episode_text,
-                      { fontSize: width * 0.04, marginTop: 10 },
+                      { fontSize: 15, marginTop: 10 },
                     ]}
                   >
                     Reload
@@ -126,7 +126,7 @@ const Search = (props) => {
                       {
                         textAlign: "left",
                         marginTop: 60,
-                        fontSize: width * 0.04,
+                        fontSize: 15,
                       },
                     ]}
                   >
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
   page_btn: {
     backgroundColor: colors.primary,
     fontFamily: "montserrat_bold",
-    fontSize: width * 0.04,
+    fontSize: 15,
     padding: 10,
     paddingHorizontal: 15,
     borderRadius: 7,

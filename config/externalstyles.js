@@ -2,14 +2,13 @@ import { colors } from "./colors";
 
 export const common_styles = (data) => {
   let width = data?.width || 0;
-  let height = data?.height || 0;
   let carousel_height = data?.carousel_height || 0;
 
   return {
     title: {
       color: colors.white,
       fontFamily: "smooch_extrabold",
-      fontSize: width * 0.1,
+      fontSize: 40,
       paddingBottom: 5,
     },
     container: {
@@ -19,7 +18,7 @@ export const common_styles = (data) => {
     },
     badge: {
       textTransform: "capitalize",
-      fontSize: width * 0.03,
+      fontSize: 14,
       paddingVertical: 5,
       fontFamily: "montserrat_bold",
       backgroundColor: colors.badge_color,
@@ -63,7 +62,7 @@ export const common_styles = (data) => {
     episode_text: {
       paddingVertical: 5,
       fontFamily: "montserrat_bold",
-      color: colors.lightgray,
+      color: colors.black,
       backgroundColor: colors.primary,
       borderRadius: 30,
       padding: 10,
@@ -83,7 +82,7 @@ export const common_styles = (data) => {
       paddingHorizontal: 5,
       fontFamily: "montserrat_medium",
       color: colors.white,
-      fontSize: 0.035 * width,
+      fontSize: 14,
       textAlign: "center",
     },
     play_btn: {
@@ -97,7 +96,7 @@ export const common_styles = (data) => {
     },
     error_text: {
       fontFamily: "montserrat_medium",
-      fontSize: height * 0.02,
+      fontSize: 15,
       textAlign: "center",
       color: colors.white,
     },
@@ -107,7 +106,7 @@ export const common_styles = (data) => {
       justifyContent: "center",
     },
     label: {
-      fontSize: width * 0.042,
+      fontSize: 18,
       paddingVertical: 10,
       fontFamily: "montserrat_bold",
       color: colors.white,

@@ -95,7 +95,7 @@ const Favorite = (props) => {
                 styles.simple_text,
                 {
                   width,
-                  fontSize: width * 0.04,
+                  fontSize: 15,
                 },
               ]}
             >
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   header_title: {
     textAlign: "center",
     fontFamily: "montserrat_bold",
-    fontSize: 0.055 * width,
+    fontSize: 25,
     color: colors.white,
   },
 });

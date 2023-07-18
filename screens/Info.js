@@ -281,7 +281,7 @@ const Info = (props) => {
                       <Text
                         style={[
                           styles.episode_text,
-                          { fontSize: width * 0.04, marginTop: 10 },
+                          { fontSize: 15, marginTop: 10 },
                         ]}
                       >
                         Go Back
@@ -300,7 +300,7 @@ const Info = (props) => {
                       <Text
                         style={[
                           styles.episode_text,
-                          { fontSize: width * 0.04, marginTop: 10 },
+                          { fontSize: 15, marginTop: 10 },
                         ]}
                       >
                         Reload
@@ -335,13 +335,13 @@ const styles = StyleSheet.create({
     textAlign: "justify",
     lineHeight: 23,
     padding: 10,
-    fontSize: width * 0.04,
+    fontSize: 15,
     paddingVertical: 5,
   },
   genres: {
     fontFamily: "montserrat_medium",
     color: colors.white,
     opacity: 0.85,
-    fontSize: width * 0.04,
+    fontSize: 15,
   },
 });

@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   note_reminder_text: {
     flexDirection: "row",
     textAlign: "center",
-    fontSize: height * 0.015,
+    fontSize: 12,
     fontFamily: "montserrat_medium",
     color: colors.black,
   },
@@ -97,7 +97,8 @@ const styles = StyleSheet.create({
   logo_text: {
     textAlign: "center",
     fontFamily: "montserrat_extrabold",
-    fontSize: 0.1 * width,
+    fontSize: 40,
+
     color: colors.white,
   },
   description: {
@@ -105,8 +106,7 @@ const styles = StyleSheet.create({
     fontFamily: "montserrat_medium",
     color: colors.white,
     paddingHorizontal: 0.05 * width,
-    fontSize: 0.04 * width,
-    // opacity: 0.8,
+    fontSize: 15,
   },
   watch_btn: {
     padding: 10,
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     fontFamily: "montserrat_bold",
     textAlign: "center",
-    fontSize: 0.05 * width,
+    fontSize: 20,
     color: colors.black,
     borderWidth: 4,
     backgroundColor: colors.primary,
@@ -123,9 +123,9 @@ const styles = StyleSheet.create({
   },
 
   credit: {
-    width: width * 0.063,
+    width: 30,
     borderRadius: 100,
-    height: width * 0.063,
+    height: 30,
     backgroundColor: colors.white,
   },
   credit_card: {
@@ -151,6 +151,6 @@ const styles = StyleSheet.create({
     color: "#232020",
     transform: [{ rotate: "-17.51deg" }],
     fontFamily: "montserrat_extrabold",
-    fontSize: width * 0.05,
+    fontSize: 20,
   },
 });

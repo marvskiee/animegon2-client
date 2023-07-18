@@ -10,7 +10,7 @@ const CardList = (props) => {
   const { data, title } = props;
   const scrollX = useRef(new Animated.Value(0)).current;
 
-  const card_size = { width: width / 3, height: width / 3 + 50 };
+  const card_size = { width: (width - 40) / 3, height: width / 3 + 50 };
 
   const infoHandler = async (item) => {
     await props.navigation.push("info_page", {
@@ -75,7 +75,7 @@ const CardList = (props) => {
                         backgroundColor: colors.episode_card,
                         color: colors.white,
                         padding: 10,
-                        fontSize: width * 0.03,
+                        fontSize: 14,
                         paddingVertical: 5,
                         bottom: 0,
                         textAlign: "center",
@@ -104,14 +104,14 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: "montserrat_bold",
     color: colors.white,
-    fontSize: 0.045 * width,
+    fontSize: 20,
     paddingBottom: 15,
   },
   card_title: {
     paddingVertical: 10,
     fontFamily: "montserrat_medium",
     color: colors.white,
-    fontSize: 0.035 * width,
+    fontSize: 14,
     textAlign: "center",
   },
 });
