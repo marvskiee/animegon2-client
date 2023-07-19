@@ -1,4 +1,4 @@
-# MOVIEHIRO
+# ANIMEGON
 - is a mobile application that offers a vast and impressive selection of anime.
 
 # Screenshots
