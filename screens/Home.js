@@ -102,6 +102,7 @@ const Home = (props) => {
         console.log(e);
       });
     setIsLoading(false);
+    console.log(count)
     setTimeout(() => {
       if (count != 4) {
         setHasError(true);
