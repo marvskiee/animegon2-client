@@ -38,14 +38,20 @@ const Watch = (props) => {
       .get("info/" + id)
       .then(async (res) => {
         count += 1;
+        let sorted = res.data?.episodes.sort((a, b) => {
+          if (a.number < b.number) return 1;
+          if (a.number > b.number) return -1;
+          return 0;
+        });
         setAnimeInfo(res.data);
+        console.log("ANIMEINFO:", res.data.episodes);
         setPlayer({
           ...player,
-          image: res.data?.episodes[0]?.image,
-          episode_number: res.data?.episodes[0]?.number,
+          image: sorted[0]?.image,
+          episode_number: sorted[0]?.number,
         });
 
-        watchHandler(res.data?.episodes[0]);
+        watchHandler(sorted[0]);
       })
       .catch((e) => {
         if (e?.message != "Network Error") {
